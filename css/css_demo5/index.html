@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>各种三角形</title>
+  <style>
+    .content {
+      width: 600px;
+      margin: 30px auto;
+    }
+
+    .content div {
+      margin-top: 20px;
+    }
+
+    .tri-box {
+      height: 0px;
+      width: 0px;
+      border-top: solid 30px blue;
+      border-left: solid 30px red;
+      border-right: solid 30px yellow;
+      border-bottom: solid 30px green;
+    }
+
+    .top {
+      border-left: solid 30px transparent;
+      border-right: solid 30px transparent;
+      border-bottom: solid 30px transparent;
+    }
+
+    .left {
+      border-top: solid 30px transparent;
+      border-right: solid 30px transparent;
+      border-bottom: solid 30px transparent;
+    }
+
+    .right {
+      border-top: solid 30px transparent;
+      border-left: solid 30px transparent;
+      border-bottom: solid 30px transparent;
+    }
+
+    .bottom {
+      border-top: solid 30px transparent;
+      border-left: solid 30px transparent;
+      border-right: solid 30px transparent;
+    }
+
+    .left-bottom {
+      border-top: solid 30px transparent;
+      border-right: solid 30px transparent;
+      border-bottom: solid 30px red;
+    }
+
+    .right-bottom {
+      border-right: solid 30px green;
+      border-top: solid 30px transparent;
+      border-left: solid 30px transparent;
+      border-bottom: solid 30px green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="tri-box"></div>
+    <div class="tri-box top"></div>
+    <div class="tri-box left"></div>
+    <div class="tri-box right"></div>
+    <div class="tri-box bottom"></div>
+    <div class="tri-box left-bottom"></div>
+    <div class="tri-box right-bottom"></div>
+  </div>
+</body>
+
+</html>
