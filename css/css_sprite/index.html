@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS 精灵图 demo</title>
+  <style>
+    .content {
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    .icon {
+      background-image: url('icon.png');
+      background-repeat: no-repeat;
+      display: inline-block;
+    }
+    .icon.all {
+      width: 60px;
+      height: 60px;
+      background-color: azure;
+    }
+    .icon.confuse {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -5px;
+    }
+    .icon.angle {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -5px;
+    }
+    .icon.bad {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -35px;
+    }
+    .icon.cool {
+    width: 20px;
+    height: 20px;
+    background-position: -35px -35px;
+    }
+
+    .block {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <span class="icon cool"></span>
+    <span class="icon angle"></span>
+    <span class="icon bad"></span>
+    <span class="icon confuse"></span>
+    <div class="block"></div>
+    整张图片
+    <br>
+    <span class="icon all"></span>
+  </div>
+
+
+</body>
+</html>
