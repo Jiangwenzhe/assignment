@@ -1,5 +1,5 @@
 main {
-  background:  url('../img/bg1.png') center center no-repeat  ;
+  background:  url('../img/bg1.jpg') center center no-repeat  ;
   background-size: cover;
 }
 
@@ -12,6 +12,7 @@ header .login {
   float: right;
   margin-right: 20px;
   font-size: 30px;
+  color: #fff;
 }
 header .login:hover {
   font-size: 50px;
