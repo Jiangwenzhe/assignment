@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.waterfall {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100px;
+  display: block;
+}
+
+.item {
+  position: absolute;
+}
+
