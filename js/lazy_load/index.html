@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="referrer" content="no-referrer" />
+  <title>图片懒加载</title>
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/holder/2.9.6/holder.min.js"></script>
+  <style>
+    .container{
+      display: flex;
+      justify-content: center;
+      max-width: 1280px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .container > img {
+      padding: 10px;
+      height: 300px;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/1.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/2.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/3.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/4.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/5.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/7.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/8.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/9.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/10.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/11.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/12.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/13.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/14.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/15.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/16.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/17.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/18.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/19.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/20.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/21.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/22.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/23.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/24.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/25.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/26.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/27.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/28.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/29.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/30.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/31.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/32.jpg">
+    <img src="https://fakeimg.pl/400x300/?text=Haha&font=lobster" data-src="http://cdn.jirengu.com/book.jirengu.com/img/33.jpg">
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
