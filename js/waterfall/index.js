@@ -34,6 +34,6 @@ function waterfall() {
     items[i].style.top = colHeightArr[index] + gap + 'px';
     items[i].style.left = items[index].offsetLeft + 'px';
     colHeightArr[index] = colHeightArr[index] + items[i].offsetHeight + gap;
-}
+  }
 }
 }
