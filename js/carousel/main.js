@@ -91,4 +91,16 @@ Carousel.prototype = {
   }
 }
 
-var a = new Carousel($('.carousel').eq(0))
+// 封装Carousel的jquery插件
+$.fn.carousel = function(opts) {
+  $.each(this, function(index, node) {
+    var c = new Carousel($(node))
+    console.log(opts)
+    if(opts.autoPlay === true) {
+      c.autoPlay()
+    }
+  })
+}
+$('.carousel').carousel({
+  autoPlay: true
+})
