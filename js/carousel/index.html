@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
     }
 
     .carousel ul,
-    .carousel li{
+    .carousel li {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -35,7 +36,7 @@
       clear: both;
     }
 
-    .carousel .img-ct > li {
+    .carousel .img-ct>li {
       float: left;
     }
 
@@ -59,9 +60,11 @@
       line-height: 30px;
       text-decoration: none;
     }
+
     .carousel .arrow:hover {
       opacity: 0.8;
     }
+
     .carousel .pre {
       left: 10px;
     }
@@ -79,7 +82,7 @@
       text-align: center;
     }
 
-    .carousel .bullet > li {
+    .carousel .bullet>li {
       display: inline-block;
       width: 30px;
       height: 5px;
@@ -89,14 +92,14 @@
       cursor: pointer;
     }
 
-    .carousel .bullet > li.active {
+    .carousel .bullet>li.active {
       background-color: #ccc;
     }
-
   </style>
 </head>
+
 <body>
-  <div class="carousel">
+  <div class="carousel" data-id="0">
     <ul class="img-ct">
       <li data-id="0"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/10.jpg" alt=""></a></li>
       <li data-id="1"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/11.jpg" alt=""></a></li>
@@ -112,6 +115,39 @@
       <li></li>
     </ul>
   </div>
+  <div class="carousel" data-id="1">
+    <ul class="img-ct">
+      <li data-id="0"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/16.jpg" alt=""></a></li>
+      <li data-id="1"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/17.jpg" alt=""></a></li>
+      <li data-id="2"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/18.jpg" alt=""></a></li>
+      <li data-id="3"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/19.jpg" alt=""></a></li>
+    </ul>
+    <a href="#" class="pre arrow"><span class="iconfont icon-left"></span></a>
+    <a href="#" class="next arrow"><span class="iconfont icon-right"></span></a>
+    <ul class="bullet">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="carousel" data-id="2">
+    <ul class="img-ct">
+      <li data-id="0"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/5.jpg" alt=""></a></li>
+      <li data-id="1"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/6.jpg" alt=""></a></li>
+      <li data-id="2"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/7.jpg" alt=""></a></li>
+      <li data-id="3"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/8.jpg" alt=""></a></li>
+    </ul>
+    <a href="#" class="pre arrow"><span class="iconfont icon-left"></span></a>
+    <a href="#" class="next arrow"><span class="iconfont icon-right"></span></a>
+    <ul class="bullet">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
   <script src="main.js"></script>
 </body>
+
 </html>

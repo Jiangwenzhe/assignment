@@ -95,12 +95,15 @@ Carousel.prototype = {
 $.fn.carousel = function(opts) {
   $.each(this, function(index, node) {
     var c = new Carousel($(node))
-    console.log(opts)
+    if(!opts) return
     if(opts.autoPlay === true) {
       c.autoPlay()
     }
   })
 }
-$('.carousel').carousel({
+
+$('.carousel').eq(0).carousel({
   autoPlay: true
 })
+$('.carousel').eq(1).carousel()
+$('.carousel').eq(2).carousel()
