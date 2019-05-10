@@ -6,6 +6,93 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>无限轮播</title>
   <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.js"></script>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1184309_apa62cpogm.css">
+  <style>
+    .carousel {
+      position: relative;
+      width: 320px;
+      height: 180px;
+      margin: 30px auto;
+      overflow: hidden;
+    }
+
+    .carousel ul,
+    .carousel li{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .carousel .img-ct {
+      position: absolute;
+      overflow: hidden;
+    }
+
+    .carousel .img-ct::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .carousel .img-ct > li {
+      float: left;
+    }
+
+    .carousel .img-ct img {
+      width: 320px;
+      height: 180px;
+    }
+
+    .carousel .arrow {
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      line-height: 30px;
+      text-decoration: none;
+    }
+    .carousel .arrow:hover {
+      opacity: 0.8;
+    }
+    .carousel .pre {
+      left: 10px;
+    }
+
+    .carousel .next {
+      right: 10px;
+    }
+
+    .carousel .bullet {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 0;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .carousel .bullet > li {
+      display: inline-block;
+      width: 30px;
+      height: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin: 0 3px;
+      cursor: pointer;
+    }
+
+    .carousel .bullet > li.active {
+      background-color: #ccc;
+    }
+
+  </style>
 </head>
 <body>
   <div class="carousel">
@@ -15,8 +102,8 @@
       <li data-id="2"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/13.jpg" alt=""></a></li>
       <li data-id="3"><a href="#"><img src="http://cdn.jirengu.com/book.jirengu.com/img/15.jpg" alt=""></a></li>
     </ul>
-    <a href="#" class="pre arrow"></a>
-    <a href="#" class="next arrow"></a>
+    <a href="#" class="pre arrow"><span class="iconfont icon-left"></span></a>
+    <a href="#" class="next arrow"><span class="iconfont icon-right"></span></a>
     <ul class="bullet">
       <li class="active"></li>
       <li></li>
